@@ -21,36 +21,42 @@ public class currencyconversion extends Activity {
         String message2 = bundle.getString("message2");
         String message = bundle.getString("message");
 
+        String price = bundle.getString("price");
+        String coin = bundle.getString("coin");
+
         EditText from_num = (EditText) findViewById(R.id.from_num);
         TextView from_currency = (TextView) findViewById(R.id.from_currency);
         EditText target_num = (EditText) findViewById(R.id.target_num);
         TextView target_currency = (TextView) findViewById(R.id.target_currency);
 
+        from_num.setText(price);
+
         target_currency.setText(message2);
-        from_currency.setText(message);
+        from_currency.setText(coin);
         Log.e("HERE",message);
         //pop a snackbar when hit convert 1 BTC = 55k USD
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                EditText from_num = (EditText) findViewById(R.id.from_num);
-                TextView target_num = (TextView) findViewById(R.id.target_num);
+//                EditText from_num = (EditText) findViewById(R.id.from_num);
+//                TextView target_num = (TextView) findViewById(R.id.target_num);
 
                 String value = from_num.getText().toString();
+                String value2 = target_num.getText().toString();
                 double result;
                 if (!value.equals("")) {
                     switch (message2) {
                         case "USD":
-                            result = Double.parseDouble(value) * 55000;
+                            result = Double.parseDouble(value) * Double.parseDouble(value2);
                             break;
                         case "EUR":
-                            result = Double.parseDouble(value) * 55500;
+                            result = Double.parseDouble(value) * Double.parseDouble(value2);
                             break;
                         case "GBP":
-                            result = Double.parseDouble(value) * 55850;
+                            result = Double.parseDouble(value) * Double.parseDouble(value2);
                             break;
                         case "JPY":
-                            result = Double.parseDouble(value) * 5950000;
+                            result = Double.parseDouble(value) * Double.parseDouble(value2);
                             break;
                         default:
                             result = 0;
