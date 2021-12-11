@@ -47,16 +47,16 @@ public class currencyconversion extends Activity {
                 if (!value.equals("")) {
                     switch (message2) {
                         case "USD":
-                            result = Double.parseDouble(value) * Integer.parseInt(price);
+                            result = Double.parseDouble(value) * Double.parseDouble(price);
                             break;
                         case "EUR":
-                            result = Double.parseDouble(value) * Integer.parseInt(price);
+                            result = Double.parseDouble(value) * Double.parseDouble(price);
                             break;
                         case "GBP":
-                            result = Double.parseDouble(value) * Integer.parseInt(price);
+                            result = Double.parseDouble(value) * Double.parseDouble(price);
                             break;
                         case "JPY":
-                            result = Double.parseDouble(value) * Integer.parseInt(price);
+                            result = Double.parseDouble(value) * Double.parseDouble(price);
                             break;
                         default:
                             result = 0;
