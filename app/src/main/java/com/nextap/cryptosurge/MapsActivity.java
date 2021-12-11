@@ -26,7 +26,7 @@ import com.google.android.gms.maps.model.PolylineOptions;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, LocationListener {
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
 
@@ -55,15 +55,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     }
 
-    /**
-     * Manipulates the map once available.
-     * This callback is triggered when the map is ready to be used.
-     * This is where we can add markers or lines, add listeners or move the camera. In this case,
-     * we just add a marker near Sydney, Australia.
-     * If Google Play services is not installed on the device, the user will be prompted to install
-     * it inside the SupportMapFragment. This method will only be triggered once the user has
-     * installed Google Play services and returned to the app.
-     */
     @RequiresApi(api = Build.VERSION_CODES.M)
     @SuppressLint("MissingPermission")
     @Override
@@ -71,7 +62,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
 
-        Toast.makeText(getApplicationContext(),"User Location",Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),"Click button at top right",Toast.LENGTH_LONG).show();
 
         mMap.setMyLocationEnabled(true);
 
@@ -96,13 +87,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 //        mMap.addPolyline(line);
     }
 
-    @SuppressLint("MissingPermission")
-    @Override
-    protected void onResume() {
-        super.onResume();
-        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,0,0,this);
-    }
+//    @SuppressLint("MissingPermission")
+//    @Override
+//    protected void onResume() {
+//        super.onResume();
+//        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+//        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,0,0,this);
+//    }
 
     public void getAtms(LatLng coordinates){
         StringBuilder sb = new StringBuilder("https://maps.googleapis.com/maps/api/place/nearbysearch/json");
@@ -134,10 +125,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         return locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
     }
 
-    @Override
-    public void onLocationChanged(@NonNull Location location) {
-        LatLng coordinates = new LatLng(location.getLatitude(),location.getLongitude());
-        getAtms(coordinates);
-        System.out.println("CCOORRDDIINNAATTEESS "+coordinates.latitude+" "+coordinates.longitude);
-    }
+//    @Override
+//    public void onLocationChanged(@NonNull Location location) {
+//        LatLng coordinates = new LatLng(location.getLatitude(),location.getLongitude());
+//        //getAtms(coordinates);
+//        System.out.println("CCOORRDDIINNAATTEESS "+coordinates.latitude+" "+coordinates.longitude);
+//    }
 }
