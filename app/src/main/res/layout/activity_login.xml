@@ -5,12 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:background="@drawable/spashscreen"
+                    android:alpha="0.2"/>
+
+    <TextView android:layout_width="match_parent"
+              android:text="Welcome"
+              android:textAlignment="center"
+              android:textSize="40sp"
+              android:textColor="#000000"
+              android:paddingTop="150dp"
+              android:layout_height="250dp"
+              android:textStyle="bold"/>
+    <TextView android:layout_width="match_parent"
+              android:text="Login now,              "
+              android:textAlignment="center"
+              android:textSize="25sp"
+              android:textColor="#000"
+              android:layout_height="50dp"
+              android:textStyle="normal" app:layout_constraintBottom_toTopOf="@+id/editText_username"/>
 
     <EditText
         android:id="@+id/editText_username"
         android:layout_width="210dp"
         android:layout_height="45dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="350dp"
         android:ems="10"
         android:hint="Username"
         android:inputType="textPersonName"
@@ -37,7 +56,9 @@
         android:id="@+id/button_login"
         android:layout_width="88dp"
         android:layout_height="48dp"
-        android:text="Login"
+        android:text="Welcome"
+        android:textColor="#fff"
+        android:background="@drawable/gradient_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

@@ -4,17 +4,20 @@
                                                    android:layout_height="match_parent">
 
 
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:background="@drawable/spashscreen"
+                    android:alpha="0.2"/>
     <LinearLayout
             android:orientation="vertical"
-            android:minHeight="550dp"
-            android:layout_width="match_parent" android:layout_height="400dp">
+            android:minHeight="650dp"
+            android:layout_width="match_parent" android:layout_height="500dp">
         <TextView android:layout_width="match_parent"
                   android:text="Wallet"
                   android:textAlignment="center"
-                  android:textSize="20sp"
-                  android:paddingVertical="30dp"
+                  android:textSize="40sp"
+                  android:paddingVertical="60dp"
                   android:textColor="#000"
-                  android:layout_height="100dp"/>
+                  android:layout_height="200dp" android:textStyle="bold"/>
         <LinearLayout android:layout_width="match_parent" android:layout_height="130dp"
                       android:orientation="horizontal"
                       android:paddingHorizontal="20dp">
@@ -58,13 +61,13 @@
 
     <Button
             android:background="@drawable/gradient_button"
-            android:layout_width="350dp"
+            android:layout_width="250dp"
             android:textColor="#FFFFFF"
             android:text="ATM near me"
             android:textAllCaps="false"
             android:layout_height="50dp" android:id="@+id/button_atmnearme" android:layout_alignParentBottom="true"
-            android:layout_marginBottom="77dp" android:layout_alignParentEnd="true" android:layout_marginEnd="52dp"
-            android:layout_alignParentStart="true" android:layout_marginStart="49dp"
+            android:layout_marginBottom="77dp" android:layout_alignParentEnd="true" android:layout_marginEnd="92dp"
+            android:layout_alignParentStart="true" android:layout_marginStart="99dp"
     />
 
 

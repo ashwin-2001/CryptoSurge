@@ -29,7 +29,7 @@ public class currencyconversion extends Activity {
         EditText target_num = (EditText) findViewById(R.id.target_num);
         TextView target_currency = (TextView) findViewById(R.id.target_currency);
 
-        from_num.setText(price);
+        //from_num.setText(price);
 
         target_currency.setText(message2);
         from_currency.setText(coin);
@@ -47,16 +47,16 @@ public class currencyconversion extends Activity {
                 if (!value.equals("")) {
                     switch (message2) {
                         case "USD":
-                            result = Double.parseDouble(value) * Double.parseDouble(value2);
+                            result = Double.parseDouble(value) * Integer.parseInt(price);
                             break;
                         case "EUR":
-                            result = Double.parseDouble(value) * Double.parseDouble(value2);
+                            result = Double.parseDouble(value) * Integer.parseInt(price);
                             break;
                         case "GBP":
-                            result = Double.parseDouble(value) * Double.parseDouble(value2);
+                            result = Double.parseDouble(value) * Integer.parseInt(price);
                             break;
                         case "JPY":
-                            result = Double.parseDouble(value) * Double.parseDouble(value2);
+                            result = Double.parseDouble(value) * Integer.parseInt(price);
                             break;
                         default:
                             result = 0;

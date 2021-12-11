@@ -3,6 +3,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:background="@drawable/spashscreen"
+                    android:alpha="0.2"/>
+
     <ImageView android:layout_width="20dp" android:layout_height="20dp"
                android:id="@+id/back"
                android:layout_marginStart="20dp"
@@ -15,13 +19,21 @@
         <TextView android:layout_width="match_parent"
                   android:text="Currency"
                   android:textAlignment="center"
-                  android:textSize="20sp"
-                  android:paddingVertical="30dp"
+                  android:textSize="40sp"
+                  android:paddingTop="100dp"
                   android:textColor="#000"
-                  android:layout_height="100dp"/>
+                  android:layout_height="200dp" android:textStyle="bold"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:text="Select a target currency"
+                  android:textAlignment="center"
+                  android:textSize="20sp"
+                  android:paddingTop="20dp"
+                  android:textColor="#000"
+                  android:layout_height="50dp" android:textStyle="bold"/>
         <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
                       android:orientation="vertical"
-                      android:layout_marginTop="100dp"
+                      android:layout_marginTop="70dp"
                       android:paddingHorizontal="20dp">
             <Button android:layout_width="270dp"
                     android:background="@drawable/gradient_button"
