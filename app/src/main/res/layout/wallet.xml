@@ -66,8 +66,8 @@
             android:text="ATM near me"
             android:textAllCaps="false"
             android:layout_height="50dp" android:id="@+id/button_atmnearme" android:layout_alignParentBottom="true"
-            android:layout_marginBottom="77dp" android:layout_alignParentEnd="true" android:layout_marginEnd="92dp"
-            android:layout_alignParentStart="true" android:layout_marginStart="99dp"
+            android:layout_marginBottom="77dp" android:layout_alignParentEnd="true" android:layout_marginEnd="112dp"
+            android:layout_alignParentStart="true" android:layout_marginStart="119dp"
     />
 
 

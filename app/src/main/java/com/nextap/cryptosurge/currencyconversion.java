@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class currencyconversion extends Activity {
@@ -16,7 +17,7 @@ public class currencyconversion extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.currencyconversion);
 
-        Button button = (Button) findViewById(R.id.button_conversion);
+        ImageButton button = (ImageButton) findViewById(R.id.button_conversion);
         Bundle bundle = getIntent().getExtras();
         String message2 = bundle.getString("message2");
         String message = bundle.getString("message");
@@ -26,7 +27,7 @@ public class currencyconversion extends Activity {
 
         EditText from_num = (EditText) findViewById(R.id.from_num);
         TextView from_currency = (TextView) findViewById(R.id.from_currency);
-        EditText target_num = (EditText) findViewById(R.id.target_num);
+        TextView target_num = (TextView) findViewById(R.id.target_num);
         TextView target_currency = (TextView) findViewById(R.id.target_currency);
 
         //from_num.setText(price);
