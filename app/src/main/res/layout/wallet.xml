@@ -4,17 +4,15 @@
                                                    android:layout_height="match_parent">
 
 
-    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
-                    android:background="@drawable/spashscreen"
-                    android:alpha="0.1"/>
+
     <LinearLayout
             android:orientation="vertical"
             android:minHeight="650dp"
             android:layout_width="match_parent" android:layout_height="500dp">
         <TextView android:layout_width="match_parent"
-                  android:text="Wallet"
+                  android:text="Select Company"
                   android:textAlignment="center"
-                  android:textSize="40sp"
+                  android:textSize="35sp"
                   android:paddingVertical="60dp"
                   android:textColor="#000"
                   android:layout_height="200dp" android:textStyle="bold"/>

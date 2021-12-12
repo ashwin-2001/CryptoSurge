@@ -5,15 +5,15 @@
 
 
     <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
-                    android:background="@drawable/spashscreen"
+                    android:background="@drawable/splashscreen"
                     android:alpha="0.1"/>
     <TextView android:layout_width="match_parent" android:layout_height="100dp"
               android:text="Converter"
-              android:layout_marginTop="70dp"
+              android:layout_marginTop="100dp"
               android:textAlignment="center"
               android:paddingVertical="10dp"
               android:textSize="40sp"
-              android:textColor="#000" android:textStyle="bold"/>
+              android:textColor="#3F3F3F" android:textStyle="bold"/>
     <ImageView android:layout_width="20dp" android:layout_height="20dp"
                android:id="@+id/back"
                android:layout_marginStart="20dp"
@@ -82,12 +82,13 @@
             android:textColor="#FFFFFF"
             android:text="Convert"
             android:textAllCaps="false"
-            android:layout_height="50dp" android:id="@+id/button_conversion" android:layout_alignParentBottom="true"
-            android:layout_marginTop="350dp"
+            android:layout_height="50dp" android:id="@+id/button_conversion"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="360dp"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="182dp"
+            android:layout_marginEnd="172dp"
             android:layout_centerVertical="true"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="160dp"
+            android:layout_marginStart="150dp"
     />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

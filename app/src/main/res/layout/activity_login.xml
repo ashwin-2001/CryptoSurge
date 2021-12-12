@@ -6,33 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".Login">
     <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
-                    android:background="@drawable/spashscreen"
-                    android:alpha="0.1"
-        />
+                    android:background="@drawable/splashscreen"
+                    android:alpha="0.1"/>
 
     <TextView android:layout_width="match_parent"
-              android:text="Welcome"
+              android:text="CryptoSurge"
               android:textAlignment="center"
               android:textSize="40sp"
               android:textColor="#000000"
               android:paddingTop="150dp"
               android:layout_height="250dp"
               android:textStyle="bold"/>
+
     <TextView android:layout_width="match_parent"
-              android:text="Login now              "
+              android:text="Crypto converter for currencies"
               android:textAlignment="center"
-              android:textSize="25sp"
-              android:textColor="#000"
-              android:layout_height="50dp"
-              android:textStyle="normal" app:layout_constraintBottom_toTopOf="@+id/editText_username"/>
+              android:fontFamily="serif-monospace"
+              android:textSize="15sp"
+              android:textColor="#000000"
+              android:paddingTop="200dp"
+              android:layout_height="250dp"/>
 
     <EditText
         android:id="@+id/editText_username"
         android:layout_width="210dp"
         android:layout_height="45dp"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="300dp"
         android:ems="10"
         android:hint="Username"
+        android:textAlignment="center"
+        android:background="#00FFFFFF"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/editText_password"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,7 +50,9 @@
         android:layout_height="45dp"
         android:layout_marginTop="50dp"
         android:hint="Password"
+        android:textAlignment="center"
         android:ems="10"
+        android:background="#00FFFFFF"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,7 +62,7 @@
         android:id="@+id/button_login"
         android:layout_width="88dp"
         android:layout_height="48dp"
-        android:text="Welcome"
+        android:text="Login"
         android:textColor="#fff"
         android:background="@drawable/gradient_button"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -67,25 +72,4 @@
         app:layout_constraintTop_toBottomOf="@+id/editText_password"
         app:layout_constraintVertical_bias="0.169" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="16dp"
-        android:text="admin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_login"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:text="1234"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.183" />
 </androidx.constraintlayout.widget.ConstraintLayout>
