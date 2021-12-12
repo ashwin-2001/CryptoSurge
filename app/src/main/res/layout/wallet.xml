@@ -6,7 +6,7 @@
 
     <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
                     android:background="@drawable/spashscreen"
-                    android:alpha="0.2"/>
+                    android:alpha="0.1"/>
     <LinearLayout
             android:orientation="vertical"
             android:minHeight="650dp"

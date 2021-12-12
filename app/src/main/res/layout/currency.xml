@@ -5,7 +5,7 @@
 
     <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
                     android:background="@drawable/spashscreen"
-                    android:alpha="0.2"/>
+                    android:alpha="0.1"/>
 
     <ImageView android:layout_width="20dp" android:layout_height="20dp"
                android:id="@+id/back"

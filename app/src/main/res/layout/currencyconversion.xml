@@ -6,7 +6,7 @@
 
     <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
                     android:background="@drawable/spashscreen"
-                    android:alpha="0.2"/>
+                    android:alpha="0.1"/>
     <TextView android:layout_width="match_parent" android:layout_height="100dp"
               android:text="Converter"
               android:layout_marginTop="70dp"
